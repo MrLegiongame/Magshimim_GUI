@@ -24,10 +24,10 @@ Team -> The team number that you got from the team lead
 Key -> API key from the project in GitLab (Only the owner of the project can create one)
 <img src="./img/step21.JPG" alt="Alt text">
 <img src="./img/step22.JPG" alt="Alt text">
-<img src="./img/step23.JPG" alt="Alt text">
-<img src="./img/step24.JPG" alt="Alt text">
+<img src="./img/23.JPG" alt="Alt text">
+<img src="./img/24.JPG" alt="Alt text">
 ID -> Your Project ID
-<img src="./img/step31.JPG" alt="Alt text">
+<img src="./img/31.JPG" alt="Alt text">
 
 Step 3: 
 Run the code and enjoy :)
