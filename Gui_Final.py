@@ -76,13 +76,13 @@ class MyFrame(customtkinter.CTkScrollableFrame):
                 # Successful request, print the response JSON
                 boards_data = response.json()
                 for data in boards_data:
-                    if data['state'] != 'closed':
-                        if len(data['assignees']) > 0:
+                    if data['state'] != 'closed' and len(data['labels']) > 0 :
+                        if len(data['assignees']) > 0 and data['labels'][0] != 'Done' and data['labels'][0] != 'done':
                             print(data['title'] + ' ' + (str)(data['due_date']) + ' ' + (str)(
                                 data['assignees'][0]['name']))
                             self.txt += data['title'] + ' | ' + (str)(data['due_date']) + ' | ' + (str)(
                                 data['assignees'][0]['name']) + '\n'
-                        else:
+                        elif data['labels'][0] != 'Done' and data['labels'][0] != 'done':
                             print(data['title'] + ' ' + (str)(data['due_date']) + ' ' + 'ERROR: No assignee')
                             self.txt += data['title'] + ' | ' + (str)(
                                 data['due_date']) + ' | ' + 'ERROR: No assignee' + '\n'
