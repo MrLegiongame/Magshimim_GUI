@@ -9,7 +9,7 @@
 
 ## General Information
 This project helps to create summary emails for magshimim students
-
+<img src="./img/overview.JPG" alt="Alt text">
 
 ## Setup
 
