@@ -79,7 +79,7 @@ class MyFrame(customtkinter.CTkScrollableFrame):
                     if data['state'] != 'closed' and len(data['labels']) > 0 :
                         if len(data['assignees']) > 0 and data['labels'][0] != 'Done' and data['labels'][0] != 'done':
                             print(data['title'] + ' ' + (str)(data['due_date']) + ' ' + (str)(
-                                data['assignees'][0]['name']))
+                                data['assignees'][0]['name']))#
                             self.txt += data['title'] + ' | ' + (str)(data['due_date']) + ' | ' + (str)(
                                 data['assignees'][0]['name']) + '\n'
                         elif data['labels'][0] != 'Done' and data['labels'][0] != 'done':
