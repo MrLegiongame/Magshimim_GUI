@@ -21,7 +21,12 @@ Step 2:
 open Config.ini and fill in the settings: 
 Team -> The team number that you got from the team lead
 
-Key -> api key from the project in GitLab
+Key -> API key from the project in GitLab (Only the owner of the project can create one)
 
+ID -> Your Project ID
+
+
+Step 3: 
+Run the code and enjoy :)
 ## Contact
-Created by [@flynerdpl](https://www.linkedin.com/in/leonid-vyushkov/) - feel free to contact me!
+Created by [@MrLegiongame](https://www.linkedin.com/in/leonid-vyushkov/) - feel free to contact me!
