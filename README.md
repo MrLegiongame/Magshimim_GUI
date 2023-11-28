@@ -16,13 +16,14 @@ This project helps to create summary emails for magshimim students
 
 Step 1: 
 download the repository to your PC
+<img src="./img/step1.JPG" alt="Alt text">
 [Example screenshot](./img/step1.JPG)
 Step 2: 
 open Config.ini and fill in the settings: 
 Team -> The team number that you got from the team lead
 
 Key -> API key from the project in GitLab (Only the owner of the project can create one)
-[Example screenshot](./img/step21.JPG)
+(./img/step21.JPG)
 [Example screenshot](./img/step22.JPG)
 [Example screenshot](./img/step23.JPG)
 [Example screenshot](./img/step24.JPG)
