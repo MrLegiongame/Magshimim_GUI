@@ -1,4 +1,5 @@
 import tkinter
+from tkinter import messagebox
 
 import customtkinter as ctk
 import requests
@@ -132,6 +133,20 @@ class MyFrame(customtkinter.CTkScrollableFrame):
                 self.toplevel_window.focus()  # if window exists focus i
 
         def finish_callback():
+            Error = ''
+            if entry_1.get() == '':
+                Error += ' למלא מספר מפגש( חייב להיות מספר)'+ "\n"
+            if text_5.compare("end-1c", "==", "1.0") and text_2.compare("end-1c", "==", "1.0"):
+                Error += ' למלא רשימת משימות' + "\n"
+            if text_1.compare("end-1c", "==", "1.0"):
+                Error += ' למלא פערים ' + "\n"
+            if text_3.compare("end-1c", "==", "1.0"):
+                Error += 'למלא סטטוס עם המנטור' + "\n"
+            if text_4.compare("end-1c", "==", "1.0"):
+                Error += 'למלא סיכום' + "\n"
+            if Error != '':
+                messagebox.showerror("שגיאה", Error)
+                return
             final_text = "סיכום שיחת סטטוס מפגש {} – צוות {}".format(entry_1.get(), config['Group number']['Team'])
             final_text = final_text + "\n\n\n\n" + " ?האם יש פערים? מה הם? למה הם קרו? מתי אנחנו משלימים אותם" + "\n"
             final_text = final_text + text_1.get("1.0", "end")
