@@ -12,9 +12,9 @@ This project helps to create summary emails for magshimim students
 <img src="./img/overview.JPG" alt="Alt text">
 ## How to run 
 In IDE: 
-open the IDE (like pycharm) and use the command in the command line: 
-pip install -r requirements.txt
-python main.py
+*open the IDE (like pycharm) and use the command in the command line: 
+*pip install -r requirements.txt
+*python main.py
 
 From desktop: 
 * Open command line
