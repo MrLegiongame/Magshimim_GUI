@@ -21,6 +21,13 @@ class ToplevelWindow(customtkinter.CTkToplevel):
         self.text_6 = customtkinter.CTkTextbox(master=self, width=300, height=500)
         self.text_6.configure('rtl', font=font)
         self.text_6.pack(side=tkinter.TOP, pady=10, fill=tkinter.BOTH, padx=10)
+        def copy_to_clipboard():
+            self.text_6.clipboard_clear()
+            self.text_6.clipboard_append(self.text_6.get('0.0', 'end'))
+            self.text_6.update()
+        # Copy button
+        copy_button = customtkinter.CTkButton(master = self, text="Copy to Clipboard", command=copy_to_clipboard)
+        copy_button.pack()
 
     def add_txt(self, txt):
         self.txt = txt
